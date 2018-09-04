@@ -1,20 +1,20 @@
 import React from "react";
 
-function ProfilePic(){
+function Post() {
   var picStyle = {
     height: '50',
     width: '50',
   }
-  var boxBorder = {
-    position: 'absolute',
-    top: '85',
-    left: '30',
-  }
+
   return (
-    <div style={boxBorder}>
+  <div className="row">
+    <div className="col-md-2">
       <img style={picStyle} src={require("./img/profile_icon.jpg")} />
     </div>
+  </div>
+
   );
 }
 
-export default ProfilePic;
+
+export default Post;
