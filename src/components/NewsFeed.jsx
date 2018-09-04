@@ -12,14 +12,30 @@ function NewsFeed(){
   var formStyle = {
     backgroundColor: 'blue',
   }
-
+  var bottomBorder = {
+    borderBottom: '1px solid gray',
+  }
   return (
     <div>
       <form style ={formStyle}>
         <img style={squareStyle} src={require("./img/square.png")} />
         <input style={inputStyle} placeholder="What's happening?"></input>
       </form>
-      <Posts/>
+      <div style={bottomBorder}>
+        <Posts/>
+      </div>
+      <div style={bottomBorder}>
+        <Posts/>
+      </div>
+      <div style={bottomBorder}>
+        <Posts/>
+      </div>
+      <div style={bottomBorder}>
+        <Posts/>
+      </div>
+      <div>
+        <Posts/>
+      </div>
     </div>
   );
 }
