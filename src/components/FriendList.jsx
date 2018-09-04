@@ -5,9 +5,12 @@ function FriendList(){
   return (
     <div>
       <h5>Lorem ipsum</h5>
-      <Friends/>
-      <Friends/>
-      <Friends/>
+      <Friends
+        backgroundColor="Yellow"/>
+      <Friends
+        backgroundColor="Green"/>
+      <Friends
+        backgroundColor="Red"/>
     </div>
   );
 }

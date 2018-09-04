@@ -1,6 +1,8 @@
 import React from "react";
+import Icon from "./Icon";
+import PropTypes from "prop-types";
 
-function Friends() {
+function Friends(props) {
   var picStyle = {
     height: '50',
     width: '50',
@@ -22,7 +24,8 @@ function Friends() {
   return (
   <div className="row" style={friendsStyling}>
     <div className="col-md-2">
-      <img style={picStyle} src={require("./img/profile_icon.jpg")} />
+      <Icon
+        backgroundColor={props.backgroundColor}/>
     </div>
     <div className="col-md-9">
       <h5>Donec eu orci et</h5>
@@ -33,5 +36,7 @@ function Friends() {
   );
 }
 
-
+Friends.propTypes = {
+  backgroundColor: PropTypes.string,
+}
 export default Friends;

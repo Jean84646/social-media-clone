@@ -1,5 +1,5 @@
 import React from "react";
-import Posts from "./Posts";
+import Post from "./Post";
 
 function NewsFeed(){
   var squareStyle = {
@@ -22,19 +22,24 @@ function NewsFeed(){
         <input style={inputStyle} placeholder="What's happening?"></input>
       </form>
       <div style={bottomBorder}>
-        <Posts/>
+        <Post
+          backgroundColor='Purple'/>
       </div>
       <div style={bottomBorder}>
-        <Posts/>
+        <Post
+          backgroundColor='Red'/>
       </div>
       <div style={bottomBorder}>
-        <Posts/>
+        <Post
+          backgroundColor='Yellow'/>
       </div>
       <div style={bottomBorder}>
-        <Posts/>
+        <Post
+          backgroundColor='Green'/>
       </div>
       <div>
-        <Posts/>
+        <Post
+          backgroundColor='Blue'/>
       </div>
     </div>
   );
